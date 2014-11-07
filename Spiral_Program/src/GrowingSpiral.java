@@ -20,13 +20,13 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 class ScreenSaver extends JPanel implements ActionListener, MouseWheelListener{
-	
+	// x and y arrays for position
 	private int x[]=new int[60];
 	private int y[]=new int[60];
 	private int numOfPoints=0;
 	private int radius=10;
-	private int delay=1000;
-	private Timer timer=null; 
+	private int delay=1000; // 1000 ms
+	private Timer timer=null; // sets timer to null
 	
 	public ScreenSaver(){
 		// Creates new timer object of int delay
